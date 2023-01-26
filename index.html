@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -151,9 +155,18 @@
           <h2 class="team-title">Наші майстри</h2>
           <ul class="team-cards">
             <li class="team-card">
-              <div class="thumb">
+              <div class="thumb" style="width: 418px">
                 <img
+                  style="display: block"
+                  srcset="
+                    ./images/team-mobile1.jpg 370w,
+                    ./images/team-tablet1.jpg 450w,
+                    ./images/team-desk1.jpg   418w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 320px) 418px,"
                   src="./images/team-mobile1.jpg"
+                  width="418"
+                  height="346"
                   alt="team-man"
                   class="team-card-img"
                 />
